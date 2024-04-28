@@ -54,6 +54,12 @@ nav .container{
 nav .container .logo{
     flex-basis: 33%;
 }
+@media (max-width:767px) {
+    nav .container .logo{
+        flex-basis: 50%;
+    }
+    
+}
 nav .container .col ul{
     display: flex;
     justify-content: space-between;
@@ -128,8 +134,8 @@ nav .list ul li a:hover{
 nav .list i{
     position: absolute;
     right: 53;
-    top: 20;
-    font-size: 40px;
+    top: 13px;
+    font-size: 32px;
     color: rgb(138, 230, 195);
     display: none;
 }
@@ -213,20 +219,23 @@ nav .list ul button{
     border-radius: 5px;
     padding-left: 20px;
     padding-right: 20px;
+    flex-wrap: wrap;
     
    
     
 }
+.section .container .col2 .box{
+    flex-basis: 30%;
+}
 @media (max-width:991px) {
-    .section .container .col2{
-        flex-basis: 100%;
-        flex-wrap: wrap;
-        align-items: center;
-        padding: 20px 93px;
-
-       
-    }
-    
+    .section .container .col2 .box{
+      flex-basis: 45%;  
+    }   
+}
+@media (max-width:600px) {
+    .section .container .col2 .box{
+      flex-basis: 100%;  
+    }   
 }
 .section .container .col2 .box{
     /* flex-basis: 30%; */
@@ -717,7 +726,6 @@ a{
 .section7 .container .col .vog .vg h6 span{
     color: rgb(47, 255, 99);
 }
-.section7 .container .col .v0g{}
 
 
 
